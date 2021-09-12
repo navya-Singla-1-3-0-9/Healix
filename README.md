@@ -74,7 +74,7 @@ Screenshots:
 ![image](https://user-images.githubusercontent.com/60549106/132103624-26f9c4de-8ef7-4506-b472-45cab76eb8e7.png)
 
 ##### GET REAL-TIME NOTIFICATIONS ABOUT APPOINTMENT AND PRESCRIPTIONS:
-![image](https://user-images.githubusercontent.com/60549106/132103664-50ce5c55-c74a-466a-a0f8-aaa040e4f254.png)
+![image](https://user-images.githubusercontent.com/90545403/132979300-33fa44c1-63ad-4207-92f2-b082d835e817.png)
 
 ##### VIEW ALL YOUR PRESCRIPTIONS AT ONE PLACE:
 ![image](https://user-images.githubusercontent.com/60549106/132103696-2f264674-2d1f-4fa8-8912-af8cb81573dd.png)
