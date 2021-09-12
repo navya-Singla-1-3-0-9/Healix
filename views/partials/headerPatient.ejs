@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .navbar {
+            font-size: 18px;
+            background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .notifs{
+            max-height: 500px;
+            width: 500px;
+            background-color: #99ccff;
+            overflow: scroll;
+
+        }
+        hr{
+            margin-bottom: 0px;
+        }
+        .dropdown-menu{
+            padding: 0px;
+            text-align: center;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+            .dropdown-menu{
+                width: 500px;
+            }
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">VirHealthCare  </a>
+        <%if(currUser.role=='patient'){%>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="/doctors" class="nav-links">Discover Doctors</a>
+            </li>
+            <li>
+                <a href="/profile" class="nav-links">My Profile</a>
+            </li>
+
+
+              <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle" style="margin-left:25px; background-color: transparent; border: 0px; color: white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell" style="font-size: 20px;"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                   <div class="notifs" >
+                       <%for(let n of notifs){%>
+                       <div class="notif" style="background-color:white;">
+                            <h6><%=n.from%></h6>
+                            <p><%=n.description%></p>
+                            <a href="http://<%=n.link%>"><%=n.link%></a>
+                            <p class="text-muted"><%=n.createdAt%></p>
+                            <hr>
+                            </div>
+                       <%}%>
+                   </div>
+                  </div>
+                </div>
+            <li>
+                <a href="/myprescription" class="nav-links">My Prescriptions</a>
+            </li>
+            <li>
+                <a href="https://www.friends2support.org/" class="nav-links">Find Donors</a>
+            </li>
+            <li>
+                <a href="http://127.0.0.1:5000/" class="nav-links">Self Examine</a>
+            </li>
+
+            <li>
+                <a href="/logout" class="nav-links">Logout</a>
+            </li>
+
+        </ul>
+        <%}else{%>
+
+             <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="/calendar" class="nav-links">Appointments</a>
+            </li>
+            <li>
+                <a href="/profile" class="nav-links">My Profile</a>
+            </li>
+
+
+              <div class="btn-group">
+                  <button type="button" class="btn dropdown-toggle" style="margin-left:25px; background-color: transparent; border: 0px; color: white;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-bell" style="font-size: 20px;"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                   <div class="notifs" >
+                       <%for(let n of notifs){%>
+                       <div class="notif" style="background-color:white;">
+                            <h6><%=n.from%></h6>
+                            <p><%=n.description%></p>
+                            <a href="http://<%=n.link%>"><%=n.link%></a>
+                            <p class="text-muted"><%=n.createdAt%></p>
+                            <hr>
+                            </div>
+                       <%}%>
+                   </div>
+                  </div>
+                </div>
+            <li>
+                <a href="/prescription" class="nav-links">Issue Prescriptions</a>
+            </li>
+
+            <li>
+                <a href="/logout" class="nav-links">Logout</a>
+            </li>
+
+        </ul>
+        <%}%>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c8338092a9.js" crossorigin="anonymous"></script>
+    
+</body>
+<script>
+    let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+</script>
+
+</html>

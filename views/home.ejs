@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="description" content="College applications">
+  <meta name="keywords" content="college, apply, india">
+  <meta name="author" content="navya">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOCAPP</title>
+	<link rel = "stylesheet" href="/css/bootstrap.min.css">
+	<link rel = "stylesheet" href= "/homestyle.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #e6e9f0;">
+
+	<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+	
+	<div class="header">
+		<nav class="navbar navbar-dark navbar-expand-xxl bg-none sticky-top" style=" font-size: 25px;">
+		<a class="navbar-brand"  style="font-weight: 600; margin-right: 50px; color: #141452;">VirHealthCare</a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="content">
+		<a href="/search" class="nav-item nav-link" style="color:#141452; font-weight: 500">CONSULT!</a>
+		<div class="navbar-nav" >
+			<a href="/doctors" class="nav-item nav-link" style="color:#141452; font-weight: 500">DISCOVER DOCTORS</a>
+			<a href="/doctors" class="nav-item nav-link" style="color: #141452; font-weight: 500">BOOK AN APPOINTMENT</a>
+			<a href="/search" class="nav-item nav-link" style="color: #141452; font-weight: 500">SELF CARE</a>
+		</div>
+		
+		<%if(!currUser){%>
+		<a href="/login" class="log"><button class= "btn btn-outline-light rounded-pill login" style="background-color: #141452;" name="login">Sign in</button></a>
+		<a href="/register" class="log"><button class= "btn btn-outline-light sgn rounded-pill" style="background-color: #141452;" name="create account">Create an account</button></a>
+			<a href="/doctor/register" class="log"><button class= "btn btn-outline-light sgn rounded-pill" style="background-color: #141452;" name="create account">Create an account(Doctor)</button></a>
+		<%}else{%>
+		<a href="/logout" class="log"><button class= "btn btn-outline-light rounded-pill login" name="login">Logout</button></a>
+		<%}%>
+	</div>
+		<!--<input class="form-control" type="search" placeholder="Search Colleges/Universities">
+		<button class= "btn btn-outline-light srch">Search</button>
+		<button class= "btn btn-outline-light sgn">SignUp</button>-->
+	</nav>
+	
+		<h1 class="text_1">CONSULT Doctors Online!</h1>
+		<h1 class="text_2">Manage your Prescriptions</h1>
+	</div>
+	
+<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+<center><marquee scrollamount="15">Book Appointments</marquee>
+      <marquee direction="right"; scrollamount="15";>Read you Prescriptions</marquee>
+      <marquee direction="left"; scrollamount="15";> Find Donors!</marquee>
+      <marquee direction="right"; scrollamount="15";>Self Examine</marquee>
+      <marquee scrolldelay="2"; scrollamount="15";>Update your Profile</marquee>
+      <marquee bgcolor="#ffbcac" width="50%">Interact with the chatBot, Healthy:)</marquee></center>
+	<div class="actions container-fluid">
+		<div class="row">
+			<div style="background-color: #eec0c6;
+			background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+			border: none;"
+			class="col-xl-4 box">
+				<h2>CONSULT ONLINE</h2>
+				<hr>
+				<img src= "/img1.png" alt ="why college?" style="height: 300px;">
+				
+				<p >Set Appointments with best doctors around the globe, as per your requirement any time! Hold a video conference online, and get digitalized prescriptions.</p>
+				<button class="btn btn-primary apply" name ="why college, learn more" style="font-size: 20px;">Find Doctors</button>
+				
+			</div>
+			<div style="background-color: #eec0c6;
+			background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+			border: none;" class="col-xl-4 box">
+				<h2>RESOURCES FOR SELF CARE!</h2>
+				<hr>
+				<img src= "/img2.png" alt="self care" style="height: 300px;">
+				<p>Got a cough? Or wondering if an X-RAY indicates Malaria? We have you covered. Just upload an image and get accurate results immediately! Keep trach of your daily Water intake and Vaccinations too!</p>
+				<button class="btn btn-primary apply" style="font-size: 20px;" name="apply">Self Care</button>
+				
+
+			</div>
+			<div style=" border:none;background-color: #eec0c6;
+			background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+			" class="col-xl-4 box">
+				<h2>GET SUPPORT</h2>
+				<hr>
+				<img src= "/img3.png" alt="get support" style="height: 300px;">
+				<p>Want to danate blood? Or does your loved one need blood donation? We are her for you</p>
+				<button class="btn btn-primary apply" style="font-size: 20px;" name="get support">Find Donors!</button>
+			</div>
+
+		</div>
+	</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+	<h2 class="test">What our Patients say!</h2>
+	<div class = "testimonials">
+		
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <section id="testimonials">
+
+    <h2>Thankyou for helping me discover the best doctors online!. They never disappoint. Very friendly service. I would recommend this.</h2>
+    <img src="https://pbs.twimg.com/media/D8dDZukXUAAXLdY.jpg" style="height: 300px;">
+
+  </section>
+    </div>
+    <div class="carousel-item">
+       <section id="testimonials">
+
+     <h2 class="testimonial-text">Simple, unpretentious, excellent. What more can I say. Everything is so wonderful!. Their self-care tools are the best!</h2>
+  
+     	<img src="https://media.istockphoto.com/photos/happy-smiling-man-looking-away-picture-id1158245623?k=20&m=1158245623&s=612x612&w=0&h=rGmn02kNdoQySPEoQmbbDBxOayL4sdW3QWqP9rjgxCg=" style="height: 300px;">
+  </section>
+      
+    </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</div>
+	
+	</div>
+
+
+	
+<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class ="resources">
+		<h2>RESOURCES</h2>
+		<div class="row justify-content-around">
+		<div class="wrapper1 col-lg-5">
+			<div class="content">
+				<h3 class="for">FOR PATIENTS<i class="fas fa-graduation-cap fa-2x uni"></i></h3>
+				<hr>
+				<h4><i class="fas fa-book-open res"></i><a href="#">Find Doctors</a></h4>
+				<hr>
+				<h4><i class="fas fa-book-reader res"></i><a href="#">View and Manage Prescriptions</a></h4>
+				<hr>
+				<h4><i class="fab fa-tripadvisor res"></i><a href="#">Self Care Advise</a></h4>
+				<hr>
+
+			</div>
+		</div>
+			
+			<div class="wrapper2 col-lg-5">
+			<div class="content">
+				<h3 class= "for"> FOR DOCTORS<i class="fas fa-university fa-2x uni"></i></h3>
+				<hr>
+				<h4><i class="fas fa-database res"></i><a href="/register/universities">Register Yourself</a></h4>
+				<hr>
+				<h4><i class="fas fa-headset res"></i><a href="#">Interact With Patients</a></h4>
+				<hr>
+				<h4><i class="fas fa-exclamation-circle res"></i><a href="#">Manage Appointments</a></h4>
+				<hr>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+	
+<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+	<script src="https://kit.fontawesome.com/c8338092a9.js" crossorigin="anonymous"></script>
+	<!----------------------------------------------------------------------------------------------------------------------------------------------------->
+	
+</body>
+</html>

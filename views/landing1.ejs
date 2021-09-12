@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Consult!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+<!--
+
+TemplateMo 563 SEO Dream
+
+https://templatemo.com/tm-563-seo-dream
+
+-->
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h4>Teams<img src="assets/images/logo-icon.png" alt=""></h4>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+            <%if(!currUser){%>
+              <li class="scroll-to-section"><div class="button"><a href="/login">LOGIN</a></div></li> 
+              <li class="scroll-to-section"><div class="main-blue-button"><a href="/register">SIGNUP</a></div></li> 
+              <li class="scroll-to-section"><div class="main-blue-button"><a href="/doctor/register">SIGNUP (DOCTOR)</a></div></li> 
+            <%}else{%>
+             <li class="scroll-to-section"><div class="main-blue-button"><a href="/logout">LOGOUT</a></div></li>
+            <%}%>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+              
+                  <div class="col-lg-12">
+                    <h2>HOST MEETINGS,CHAT &amp; COLLABORATE INSTANTLY!</h2>
+                  </div>
+                 
+              
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/banner-right-image.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="features" class="features section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="features-content">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                  <div class="first-number number">
+                    <h6>01</h6>
+                  </div>
+                 <i class="fas fa-video fa-3x"></i>
+                  <h4>Video Conferences</h4>
+                  <div class="line-dec"></div>
+                  <p>This HTML5 template is based on Bootstrap 5 CSS. You are free to customize anything.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="features-item second-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+                  <div class="second-number number">
+                    <h6>02</h6>
+                  </div>
+                 <i class="far fa-comment-alt fa-3x"></i>
+                  <h4>GROUPS AND CHAT</h4>
+                  <div class="line-dec"></div>
+                  <p>Lorem ipsum dolor sit ameter consectetur adipiscing li elit sed do eiusmod.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="features-item first-feature wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                  <div class="third-number number">
+                    <h6>03</h6>
+                  </div>
+                 <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                  <h4>COLLABORATIVE WHITEBOARD</h4>
+                  <div class="line-dec"></div>
+                  <p>If this template is useful for your website, please consider to <a rel="nofollow" href="https://www.paypal.me/templatemo" target="_blank">support us</a> a little.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="features-item second-feature last-features-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                  <div class="fourth-number number">
+                    <h6>04</h6>
+                  </div>
+                  <i class="fas fa-sticky-note fa-3x"></i>
+                  <h4>COLLABORATIVE NOTES</h4>
+                  <div class="line-dec"></div>
+                  <p>Below circular progress bar animation supports those CSS values 10, 20, 30, till 100.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="skills-content">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                 
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="skill-item last-skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+ 
+ 
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/c8338092a9.js" crossorigin="anonymous"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+</html>

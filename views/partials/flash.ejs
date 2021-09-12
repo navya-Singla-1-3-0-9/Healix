@@ -1,0 +1,18 @@
+ <%if(success && success.length>0){%>
+<div class="alert alert-success alert-dismissible fade show test" role="alert">
+  <strong><%=success%></strong>
+  <button type="button" class="close ml-auto" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<%}%>
+
+
+<%if(error && error.length>0){%>
+<div class="alert alert-danger alert-dismissible fade show test" role="alert">
+  <strong><%=error%></strong>
+  <button type="button" class="close ml-auto" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<%}%>

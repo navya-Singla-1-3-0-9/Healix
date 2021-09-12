@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+    background: #fff2e6
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+    </style>
+</head>
+<body>
+    <%-include('partials/headerPatient')%>
+    <form action="/profile" method="post">
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div style="background-color: #eec0c6;
+        background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%)" class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img style="height:120px; width:130px" class="rounded-circle mt-5" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"><%=currUser.username%></span><span class="text-black-50"><%=currUser.email%></span><span> </span></div>
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6"><label class="labels">Userame</label><input name="name" type="text" class="form-control" placeholder="first name" value="<%=prof.name%>"></div>
+                        <div class="col-md-6"><label class="labels">Full name</label><input name="Surname" type="text" class="form-control" value="<%=prof.surname%>" placeholder="surname"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">PhoneNumber</label><input name="number" type="text" class="form-control" placeholder="enter phone number" value=""></div>
+                        <div class="col-md-12"><label class="labels">Address</label><input name="address" type="text" class="form-control" placeholder="enter address" value=""></div>
+                        <div class="col-md-12"><label class="labels">Email ID</label><input name="email" type="text" class="form-control" placeholder="enter email id" value=""></div>
+                        <div class="col-md-12"><label class="labels">E</label><input name="e" type="text" class="form-control" placeholder="education" value=""></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><label class="labels">Age</label><input name="age" type="text" class="form-control" placeholder="enter your age" value=""></div>
+                        <div class="col-md-6"><label class="labels">Weight</label><input name="weight" type="text" class="form-control" value="" placeholder="enter your weight"></div>
+                    </div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="submit">Save Profile</button></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center experience"><span>Medical History</span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i>&nbsp;Experience</span></div><br>
+                    <div class="col-md-12"><label class="labels">Existing Diseases</label><input name="disease" type="text" class="form-control" placeholder="Kindly enter the diseases if any" value=""></div> <br>
+                    <div class="col-md-12"><label class="labels">Doctors in contact with</label><input name="doctors" type="text" class="form-control" placeholder="Name of the doctors" value=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</form>
+</body>
+</html>

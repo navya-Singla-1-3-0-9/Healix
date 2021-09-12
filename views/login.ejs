@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+
+  </head>
+<body style="background-color: #e6e9f0">
+    <%-include('partials/flash.ejs')%>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+      <div class="row mt-auto">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="card shadow">
+            <img src="https://jungleworks.com/wp-content/uploads/2021/05/shutterstock_1566654394-1024x538.jpg"
+                    alt="" class="card-img-top" />
+            <div class="card-body">
+            <h5 class="card-title">Login</h5>
+            <form action="/login" method="post">
+               <div class="mb-3">
+                 <label class="form-label" for="username">Username</label>
+                 <input type="text" name="username" placeholder="username" class="form-control" id="username" autofocus>
+               </div>
+
+               <div class="mb-3">
+                 <label class="form-label" for="pw">password</label>
+                 <input type="password" name="password" placeholder="password" class="form-control" id="pw">
+               </div>
+               <button type="submit" class="btn btn-success btn-block" style="background-color: #0066cc;">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="/css/docreg.css">
+  </head>
+  <body>
+    
+    <main class="container  mt-5">
+      <div class="row">
+
+        <div>
+
+        <form action="/doctor/register" method="post" style="color:black;">
+           <div class="header rounded-pill">
+        <h1 class="text-center" style="color:white">REGISTER</h1>
+      </div>
+        <div class="mb-3">
+                  <label class="form-label" for="username">Username</label>
+                  <input type="text" name="username" placeholder="username" class="form-control" id="username">
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email</label>
+                  <input type="email" name="email" placeholder="Email" class="form-control" id="email">
+                </div>
+
+                 <div class="mb-3">
+                  <div class="row">
+                    <div class="col-6">
+                       <label class="form-label" for="first_name">First Name</label>
+                        <input type="text" name="first_name" placeholder="First Name" class="form-control" id="first_name">
+                    </div>
+                    <div class="col-6">
+                       <label class="form-label" for="last_name">Last Name</label>
+                        <input type="text" name="last_name" placeholder="Last Name" class="form-control" id="last_name">
+                    </div>
+                   
+                  </div>
+                  </div>
+
+                   <div class="mb-3">
+                  <label class="form-label" for="email">Specialty</label>
+                  <input type="text" name="specialty" placeholder="Specialty" class="form-control" id="specialty">
+                </div>
+                  <div class="mb-3">
+                    <label class="form-label"><b>Bachelor's</b></label>
+                  <div class="row">
+                    <div class="col-6">
+                       <label class="form-label" for="b_uni">University</label>
+                        <input type="text" name="b_uni" placeholder="University" class="form-control" id="b_uni">
+                    </div>
+                    <div class="col-6">
+                       <label class="form-label" for="b_loc">Location</label>
+                        <input type="text" name="b_loc" placeholder="Location" class="form-control" id="b_loc">
+                    </div>
+                   
+                  </div>
+
+                   <label class="form-label"><b>Master's</b></label>
+                  <div class="row">
+                    <div class="col-6">
+                       <label class="form-label" for="m_uni">University</label>
+                        <input type="text" name="m_uni" placeholder="University" class="form-control" id="m_uni">
+                    </div>
+                    <div class="col-6">
+                       <label class="form-label" for="m_loc">Location</label>
+                        <input type="text" name="m_loc" placeholder="Location" class="form-control" id="m_loc">
+                    </div>
+                   
+                  </div>
+                  </div>
+
+
+                  <div class="mb-3">
+                  <label class="form-label" for="desc">Description</label>
+                  <input type="text" name="description" placeholder="Decription" class="form-control" id="desc">
+                </div>
+                  <div class="mb-3">
+                  <label class="form-label" for="img">Image Link</label>
+                  <input type="text" name="img" placeholder="Image URL" class="form-control" id="img">
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="price">Price</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id= "pr">$</span>
+                    <input type="text" name="price" placeholder="Price" class="form-control" id="price" aria-describedby="pr">
+                  </div>
+                </div>
+
+
+                <div class="mb-3">
+                  <label class="form-label" for="pw">password</label>
+                  <input type="password" name="password" placeholder="password" class="form-control" id="pw">
+                </div>
+                <button type="submit" class="btn btn-success rounded-pill">Register</button>
+    </form>
+    
+      </div>
+      </div>
+    
+  </main>
+   
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+  </body>
+</html>
