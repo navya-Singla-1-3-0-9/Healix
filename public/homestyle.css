@@ -1,0 +1,265 @@
+.header{
+  	height: 600px;
+	background-image: url("https://o.remove.bg/downloads/a936da7d-5d25-4384-8e62-fe2afe375984/image-removebg-preview.png");
+	background-size: 100% 100%;
+	color: white;
+	text-transform: uppercase;
+	background-repeat: no-repeat;
+	background-color: #66b3ff;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 50px;
+	margin-bottom: 7%;
+}
+.sgn:hover{
+	color: white;
+}
+.log{
+	color: white;
+}
+.search{
+	margin-top: 10px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+.dropdown-item:hover{
+	background-color: black;
+	text-decoration: underline; 
+}
+.hideme{
+	visibility: hidden;
+	display:none;
+}
+.sgn{
+	margin-left: 20px;
+}
+.login{
+	margin-left: 50px;
+}
+
+h1{
+	padding-top: 100px;
+}
+
+button{
+	font-size: 18px;
+	display: inline;
+}
+
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  
+  55%, 90% {
+    width: 15em;
+  }
+}
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 35% {
+    width: 14em;
+  }
+}
+
+
+.text_1 {
+	margin-top: 60px;
+  animation: text1;
+  color: black;
+}
+.text_2 {
+	margin-top: 60px;
+  animation: text2;
+  color: black;
+}
+
+.text_1, .text_2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 23s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+h1{
+	font-weight: 600;
+	font-size: 400%;
+}
+.text_1::after, .text_2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+.link1{
+	color: white;
+}
+
+@media(max-width: 1100px){
+	.header{
+		height:400px;
+		margin-bottom: 200px;
+		background-image: url('https://o.remove.bg/downloads/a15b0d80-4eb5-40d8-98f0-40974798a772/telehealth-and-value-based-care--removebg-preview.png')
+
+	}
+	.link1{
+		color: black;
+	}
+	h1{
+		display: none;
+		visibility: hidden;
+	}
+
+	
+	
+}
+
+@media(max-width: 990px){
+		.sgn,.login{
+			margin:0;
+			width:100%;
+		}
+		
+
+}
+@media(max-width: 550px){
+	.header{
+		height: 300px;
+	}
+	.search{
+		border-color: #66b3ff;
+		color: #66b3ff;
+	}
+	.search:hover{
+		background-color: #66b3ff;
+	}
+
+
+}
+.row{
+	text-align: center;
+	
+}
+h2{
+	font-size: 40px;
+	font-weight: 700;
+}
+p{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.box{
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 1px solid gray;
+}
+
+.apply{
+	background-color: #66b3ff;
+}
+.apply:hover{
+	color: #66b3ff;
+	background-color:white; 
+}
+
+.actions{
+	padding: 0 7%;
+	margin-bottom: 3%;
+}
+.testimonials{
+	padding: 7%;
+	margin-left: 7%;
+	margin-right: 7%;
+	text-align:center;
+	background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+	color: white;
+	margin-bottom: 3%;
+}
+.test{
+	text-align: center;
+	text-transform: uppercase;
+}
+.resources{
+	text-align: center;
+	padding: 3% 7%;
+	margin-bottom: 3%;
+}
+.wrapper1{
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(130,205,221,1) 0%, rgba(255,247,153,1) 90% );
+	padding: 10px;
+	
+}
+.col{
+	margin:10px;
+}
+.content{
+	background-color: white;
+}
+.wrapper2{
+	background-image: linear-gradient( 109.5deg,  rgba(76,221,242,1) 11.2%, rgba(92,121,255,1) 91.1% );
+	padding: 10px;
+}
+.footer{
+	margin:0;
+	background-color: #5acccc;
+	height: 500px;
+	padding: 100px 7%;
+}
+
+.comm{
+	position: relative;
+	left: 100px;
+	margin-top: 20px;
+}
+
+.uni{
+	position: relative;
+	left:0px;
+	color: #03e3fc;
+}
+.for{
+	font-size: 40px;
+	font-weight: 600;
+}
+h4{
+	font-size: 30px;
+}
+.res{
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+}
+.popular{
+	background-color: #4daeae;
+	font-size: 25px;
+	padding: 10px;
+	margin-left: 20px;
+	margin-right:20px;
+	
+
+}
+.footer a{
+	color: black;
+}

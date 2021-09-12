@@ -1,0 +1,79 @@
+#container{
+	margin:10% auto;
+	background-color: #f0f0f0;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+@media(min-width: 700px){
+	#container{
+		width:700px;
+	}
+}
+.completed{
+	color: gray;
+	text-decoration: line-through;
+}
+/*body{
+	font-family: "Roboto";
+	background: #2BC0E4;  
+	background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  
+	background: linear-gradient(to right, #EAECC6, #2BC0E4); 
+
+}*/
+h1 i{
+	float: right;
+}
+h1{
+	background-color: #2980b9;
+	color: white;
+	padding:10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0px;
+}
+.list{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+.task{
+	background-color: white;
+	height:40px;
+	line-height: 40px;
+	color: #666;
+	font-size: 20px;
+	font-weight: 520;
+}
+.task:nth-child(2n){
+	background-color: #f0f0f0;
+}
+.addTask{
+	font-size: 18px;
+	background-color: #f0f0f0;
+	width:100%;
+	padding: 10px 10px 18px;
+	box-sizing:border-box;
+	color: #2980b9;
+	outline: none;
+	border: none;
+}
+.addTask:focus{
+	background-color: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+.element{
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+
+}
+.task:hover .element{
+	width: 40px;
+	opacity: 1;
+}
