@@ -3,7 +3,7 @@ VirHealthCare is a Telehealth platform that allows long-distance patient and cli
 
 
 
-Link to app: [https://still-wave-47357.herokuapp.com/](url)
+Link to app: [https://virtual-healthcare.onrender.com](url)
 ## COLLABORATORS
 #### Navya Singla
 #### Shirin Julka
