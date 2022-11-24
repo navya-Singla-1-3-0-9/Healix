@@ -56,8 +56,7 @@ app.use((req,res,next)=>{
 	next();
 })
 const  mongoose  = require("mongoose");
-
-//const url= 'mongodb://localhost:27017/consultm'
+const url= process.env.DB_URL
 const  connect  =  mongoose.connect(url, { useNewUrlParser: true  });
 const  Call = require("./models/callschema");
 const  Doctor = require("./models/doctors");
